@@ -3,66 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise</title>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-            background-color: purple;
-        }
-        .container {
-            width: 100%;
-            max-width: 650px;
-            background-color: white;
-            padding: 28px;
-            margin: 0 28px;
-            border-radius: 10px; 
-        }
-        form {
-            display: flex;
-            
-        }
-      
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"
+/>
 
-    </style>
+
 </head>
 <body>
-   <main>
-    <div class="container">
-        <form>
-            <div>
-            <label for="name">First Name</label>
-            <input type="text"
-             name="fullName"
-             placeholder="First Name...">
-            </div>
-            <div>
-                <label for="username">Last Name</label>
-                <input type="text"
-                 name="lastName"
-                 placeholder="Last Name...">
-            </div>
-            <div>
-                <label for="email">Email</label>
-                <input type="text"
-                 name="email"
-                 placeholder="Email...">
-            </div>
-            <div>
-                <label for="name">Phone</label>
-                <input type="text"
-                 name="phone"
-                 placeholder="Phone...">
-            </div>
-     </form>
+        <h1>Contact us</h1>
+        <div class="container">
+
+                <div class="line" >
+                    <div class="item">
+                        <div class="into-item"> <label for="name">First Name</label></div> 
+                        <div class="into-item"><input type="text" placeholder="Your name..."></div>
+                    </div>
+                    <div class="item"> 
+                        <div class="into-item"> <label for="lname">Last Name</label></div>
+                        <div class="into-item"> <input type="text"  placeholder="Your last name..."></div>
+                    </div>
+                </div>
+         
+                <div class="line" >
+                    <div class="item"> 
+                        <div class="into-item"> <label for="email">Email</label></div>
+                        <div class="into-item"><input type="text" id="email" placeholder="Your email..."></div>
+                    </div>
+                    <div class="item"> 
+                        <div class="into-item"> <label for="phone">Phone</label></div>
+                        <div class="into-item"> <input type="text" id="phone" placeholder="Your phone..."></div>
+                        
+                    </div>
+                </div>
+                    <div class="otherline">
+                        <label for="country">Country</label>
+                    <select>
+                        <option value="">--Select country--</option>
+                        <option value="moldova">Moldova</option>
+                        <option value="america">America</option>
+                        <option value="japan">Japan</option>
+                        <option value="irlanda">Irlanda</option>
+                    </select>
+                    </div>
+
+                <div class="otherline">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="Your address...">
+                </div>
+
+                <div class="otherline">
+                    <label for="text">Subject</label>
+                    <textarea name="subject" id="textarea" cols="20" rows="20" placeholder="Write something..."></textarea>
+                </div>
+
+                <div class="otherline">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+
     </div>
-   </main>
 </body>
 </html>
